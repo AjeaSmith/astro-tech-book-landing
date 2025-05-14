@@ -1,9 +1,150 @@
 @font-face {
-  font-family: 'Martian Mono'; /* Choose a name for your font family */
-  src: url('/fonts/martian-mono/static/MartianMono-Regular.ttf') format('ttf'); /* Path relative to the public folder */
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Martian Mono"; /* Choose a name for your font family */
+	src: url("/fonts/martian-mono/static/MartianMono-Regular.ttf") format("ttf"); /* Path relative to the public folder */
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Martian Mono"; /* Choose a name for your font family */
+	src: url("/fonts/martian-mono/static/MartianMono-Semibold.ttf") format("ttf"); /* Path relative to the public folder */
+	font-weight: 600;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Martian Mono"; /* Choose a name for your font family */
+	src: url("/fonts/martian-mono/static/MartianMono-Bold.ttf") format("ttf"); /* Path relative to the public folder */
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter"; /* Choose a name for your font family */
+	src: url("/fonts/Inter/static/Inter_24pt-Regular.ttf") format("ttf"); /* Path relative to the public folder */
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter"; /* Choose a name for your font family */
+	src: url("/fonts/Inter/static/Inter_24pt-SemiBold.ttf") format("ttf"); /* Path relative to the public folder */
+	font-weight: 600;
+	font-display: swap;
+}
+/* ROOT COLORS */
+:root {
+	--neutral-900: #062630;
+	--neutral-700: #385159;
+	--neutral-200: #e6e1df;
+	--neutral-100: #faf5f3;
+	--white: #ffffff;
+	--salmon-500: #fea36f;
+	--salmon-100: #ffe2d1;
+	--salmon-50: #fff5ef;
+	--text-gradient: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+	--gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+}
+/* HELPER FONT CLASSES */
+.heading-martian-bold {
+	line-height: 120%;
+	letter-spacing: -2px;
+	font-size: clamp(2.375rem, 1.8468rem + 2.2535vw, 3.875rem);
+}
+.heading-martian-semi {
+	font-weight: 600;
+	line-height: 130%;
+	letter-spacing: -2px;
+	font-size: clamp(2.125rem, 1.7729rem + 1.5023vw, 3.125rem);
+}
+.heading3-martian-semi {
+	font-weight: 600;
+	line-height: 110%;
+	letter-spacing: -1px;
+	font-size: clamp(1.5rem, 1.2799rem + 0.939vw, 2.125rem);
+}
+.text-inter {
+	font-weight: normal;
+}
+.text-inter,
+.text-inter-semi {
+	font-family: "Inter", sans-serif;
+	font-size: 1.25rem;
+}
+.text-inter-semi {
+	font-weight: 600;
+}
+
+/* HELPER SPACING CLASSES */
+.spacing-2 {
+	margin-right: 2px;
+}
+.spacing-4 {
+	margin-right: 4px;
+}
+.spacing-6 {
+	margin-right: 6px;
+}
+.spacing-8 {
+	margin-right: 8px;
+}
+.spacing-10 {
+	margin-right: 10px;
+}
+.spacing-12 {
+	margin-right: 12px;
+}
+.spacing-16 {
+	margin-right: 16px;
+}
+.spacing-20 {
+	margin-right: 20px;
+}
+.spacing-24 {
+	margin-right: 24px;
+}
+.spacing-32 {
+	margin-right: 32px;
+}
+.spacing-40 {
+	margin-right: 40px;
+}
+.spacing-48 {
+	margin-right: 48px;
+}
+.spacing-64 {
+	margin-right: 64px;
+}
+.spacing-80 {
+	margin-right: 80px;
+}
+
+/* HELPER RADIUS CLASSES */
+.radius-4 {
+	border-radius: 4px;
+}
+.radius-6 {
+	border-radius: 6px;
+}
+.radius-8 {
+	border-radius: 8px;
+}
+.radius-10 {
+	border-radius: 10px;
+}
+.radius-12 {
+	border-radius: 12px;
+}
+.radius-16 {
+	border-radius: 16px;
+}
+.radius-20 {
+	border-radius: 20px;
+}
+.radius-24 {
+	border-radius: 24px;
+}
+.radius-full {
+	border-radius: 100%;
 }
 
 /* TODO: create css color vars using app i created :)   */
