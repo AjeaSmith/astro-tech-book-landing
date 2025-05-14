@@ -1,3 +1,7 @@
+---
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,16 +9,19 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Frontend Mentor | Tech book club</title>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
-
+<!-- TODO: Find out what makes using @font-face is helpful -->
+<!-- TODO: create new branch for basic setup (folder structure, fonts, colors) -->
 <style>
 	html,
 	body {
+		font-family: "Martian Mono", sans-serif;
+		font-weight: 600;
 		margin: 0;
 		width: 100%;
 		height: 100%;

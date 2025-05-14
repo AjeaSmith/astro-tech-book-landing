@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Martian Mono'; /* Choose a name for your font family */
+  src: url('/fonts/martian-mono/static/MartianMono-Regular.ttf') format('ttf'); /* Path relative to the public folder */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TODO: create css color vars using app i created :)   */
+/* TODO: add font sizes as well */
