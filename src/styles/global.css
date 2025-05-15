@@ -31,6 +31,13 @@
 	font-weight: 600;
 	font-display: swap;
 }
+body {
+	color: var(--neutral-900);
+	font-family: "Martian Mono", monospace;
+	font-weight: normal;
+	width: 100%;
+	/* margin: 0; */
+}
 /* ROOT COLORS */
 :root {
 	--neutral-900: #062630;
@@ -147,5 +154,40 @@
 	border-radius: 100%;
 }
 
-/* TODO: create css color vars using app i created :)   */
-/* TODO: add font sizes as well */
+/* HELPER BUTTON CLASSES */
+button {
+	text-transform: uppercase;
+	padding-block: 12px;
+	padding-inline: 24px;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 8px;
+}
+.primary-btn {
+	border: 2px solid var(--neutral-900);
+	background: var(--salmon-50);
+}
+.primary-btn:hover {
+	background: var(--gradient);
+}
+.primary-btn:focus {
+	background: var(--gradient);
+	outline-offset: 2px;
+	outline: 2px solid var(--neutral-900);
+}
+
+.secondary-btn {
+	color: white;
+	background: var(--neutral-900);
+	border: 2px solid white;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.secondary-btn:hover {
+	background: linear-gradient(to right, var(--neutral-700), var(--neutral-900));
+}
+.secondary-btn:focus {
+	background: linear-gradient(to right, var(--neutral-700), var(--neutral-900));
+	outline-offset: 2px;
+	outline: 2px solid white;
+}
