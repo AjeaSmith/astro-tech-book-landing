@@ -38,7 +38,11 @@ body {
 	width: 100%;
 	/* margin: 0; */
 }
-/* ROOT COLORS */
+.wrapper {
+	margin-inline: 1rem;
+	max-width: 73.375rem;
+}
+/* ROOT */
 :root {
 	--neutral-900: #062630;
 	--neutral-700: #385159;
@@ -190,4 +194,16 @@ button {
 	background: linear-gradient(to right, var(--neutral-700), var(--neutral-900));
 	outline-offset: 2px;
 	outline: 2px solid white;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+	.wrapper {
+		margin-inline: 2rem;
+	}
+}
+@media (min-width: 1440px) {
+	.wrapper {
+		margin-inline: auto
+	}
 }
