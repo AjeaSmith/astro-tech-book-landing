@@ -1,4 +1,5 @@
 ---
+import Logo from "../assets/logo.svg";
 import "../styles/global.css";
 ---
 
@@ -12,10 +13,11 @@ import "../styles/global.css";
 		<title>Frontend Mentor | Tech book club</title>
 	</head>
 	<body>
-		<slot />
+		<header class="wrapper">
+			<Logo />
+		</header>
+		<main class="wrapper">
+			<slot />
+		</main>
 	</body>
 </html>
-
-<style>
-	
-</style>
